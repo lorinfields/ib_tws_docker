@@ -1,7 +1,7 @@
 tws:
     build: .
     environment:
-        TWSUSERID: fdemo
+        TWSUSERID: lorin1972
         TWSPASSWORD: demouser
         VNC_PASSWORD: doughnuts
     ports:

@@ -18,8 +18,10 @@ RUN apt-get update && apt-get install -y \
 
 # Download IB Connect and TWS
 RUN cd /tmp && \
-    wget https://github.com/ib-controller/ib-controller/releases/download/2.14.0/IBController-2.14.0.zip && \
-    unzip IBController-2.14.0.zip -d /opt/IBController && \
+    #  Update to latest release 3.4
+    wget https://github.com/ib-controller/ib-controller/releases/download/3.4.0/IBController-3.4.0.zip && \
+    # wget https://github.com/ib-controller/ib-controller/releases/download/2.14.0/IBController-2.14.0.zip && \
+    unzip IBController-3.4.0.zip -d /opt/IBController && \
     wget https://download2.interactivebrokers.com/installers/tws/latest-standalone/tws-latest-standalone-linux-x64.sh && \
     chmod +x tws-latest-standalone-linux-x64.sh && \
     echo "n" | ./tws-latest-standalone-linux-x64.sh && \
